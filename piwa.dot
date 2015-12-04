@@ -1,0 +1,128 @@
+digraph Piwa {
+    node [fontsize=10];
+
+    "Piwa" -> "Jasne\nlagery";
+    "Jasne\nlagery" -> "Lekki\namerykański\nlager";
+    "Jasne\nlagery" -> "Standardowy\namerykański\nlager" [minlen=2];
+    "Jasne\nlagery" -> "Amerykański\nLager\nPremium";
+    "Jasne\nlagery" -> "Munich\nHelles" [minlen=2];
+    "Jasne\nlagery" -> "Dortmunder\neksportowy";
+
+    "Piwa" -> "Pilsnery" [minlen=3];
+    "Pilsnery" -> "Niemiecki\npils";
+    "Pilsnery" -> "Pils\nczeski";
+    "Pilsnery" -> "Pils\namerykański";
+
+    "Piwa" -> "Europejskie\nbursztynowe\nlagery";
+    "Europejskie\nbursztynowe\nlagery" -> "Lager\nwiedeński";
+    "Europejskie\nbursztynowe\nlagery" -> "Marcowe";
+
+    "Piwa" -> "Ciemne\nlagery" [minlen=3];
+    "Ciemne\nlagery" -> "Ciemny\nAmerykański\nLager";
+    "Ciemne\nlagery" -> "Monachijskie\nciemne";
+    "Ciemne\nlagery" -> "Schwarzbier";
+
+    "Piwa" -> "Koźlaki";
+    "Koźlaki" -> "Koźlak" [minlen=2];
+    "Koźlaki" -> "Koźlak\nMajowy";
+    "Koźlaki" -> "Koźlak\nDubeltowy" [minlen=2];
+    "Koźlaki" -> "Koźlak lodowy"
+
+    "Piwa" -> "Jasne\nhybrydowe" [minlen=3];
+    "Jasne\nhybrydowe" -> "Kremowe\nAle";
+    "Jasne\nhybrydowe" -> "Blonde\nAle" [minlen=2];
+    "Jasne\nhybrydowe" -> "Kolońskie";
+    "Jasne\nhybrydowe" -> "Amerykańskie\nPszeniczne\n/Żytnie" [minlen=2];
+
+    "Piwa" -> "Bursztynowe\nhybrydowe";
+    "Bursztynowe\nhybrydowe" -> "Alt\nPółnocnoniemiecki";
+    "Bursztynowe\nhybrydowe" -> "California\nCommon";
+    "Bursztynowe\nhybrydowe" -> "Alt\nDusseldorfski";
+
+    "Piwa" -> "English\nPale Ale" [minlen=3];
+    "English\nPale Ale" -> "Standardowy\nBitter";
+    "English\nPale Ale" -> "Premium\nBitter";
+    "English\nPale Ale" -> "Mocny\nBitter";
+
+    "Piwa" -> "Scottish/Irish Ale";
+    "Scottish/Irish Ale" -> "Szkockie\nlekkie 60";
+    "Scottish/Irish Ale" -> "Szkockie\nmocne 70" [minlen=2];
+    "Scottish/Irish Ale" -> "Szkockie\neksportowe 80";
+    "Scottish/Irish Ale" -> "Irlandzkie\nCzerwone Ale" [minlen=2];
+    "Scottish/Irish Ale" -> "Szkockie\nMocne Ale";
+
+    "Piwa" -> "American Ale" [minlen=3];
+    "American Ale" -> "American Pale Ale";
+    "American Ale" -> "American Amber Ale" [minlen=2];
+    "American Ale" -> "American Brown Ale";
+
+    "Piwa" -> "English\nBrown Ale";
+    "English\nBrown Ale" -> "Mild";
+    "English\nBrown Ale" -> "Southern\nEnglish Brown" [minlen=2];
+    "English\nBrown Ale" -> "Northern\nEnglish Brown";
+
+    "Piwa" -> "Portery" [minlen=3];
+    "Portery" -> "Porter\nangielski";
+    "Portery" -> "Robust\nPorter" [minlen=2];
+    "Portery" -> "Porter\nBałtycki";
+
+    "Piwa" -> "Stouty";
+    "Stouty" -> "Dry Stout";
+    "Stouty" -> "Sweet Stout" [minlen=2];
+    "Stouty" -> "Stout Owsiany";
+    "Stouty" -> "Foreign Extra Stout" [minlen=2];
+    "Stouty" -> "Amerykański Stout";
+    "Stouty" -> "Russian Imperial Stout" [minlen=2];
+
+    "Piwa" -> "India Pale Ale" [minlen=3];
+    "India Pale Ale" -> "Angielskie IPA";
+    "India Pale Ale" -> "Amerykańskie IPA" [minlen=2];
+    "India Pale Ale" -> "Imperialne IPA";
+
+    "Piwa" -> "Niemieckie\nPszeniczne/Żytnie";
+    "Niemieckie\nPszeniczne/Żytnie" -> "Pszeniczne";
+    "Niemieckie\nPszeniczne/Żytnie" -> "Pszeniczne Ciemne" [minlen=2];
+    "Niemieckie\nPszeniczne/Żytnie" -> "Koźlak Pszeniczny";
+    "Niemieckie\nPszeniczne/Żytnie" -> "Żytnie" [minlen=2];
+
+    "Piwa" -> "Belgijskie i\nFrancuskie Ale" [minlen=3];
+    "Belgijskie i\nFrancuskie Ale" -> "Witbier";
+    "Belgijskie i\nFrancuskie Ale" -> "Belgijskie\nJasne Ale" [minlen=2];
+    "Belgijskie i\nFrancuskie Ale" -> "Saison";
+    "Belgijskie i\nFrancuskie Ale" -> "Bière de Garde" [minlen=2];
+    "Belgijskie i\nFrancuskie Ale" -> "Belgian\nSpecialty Ale";
+
+    "Piwa" -> "Kwaśne Ale";
+    "Kwaśne Ale" -> "Berliński\nPszeniczne";
+    "Kwaśne Ale" -> "Flamandzkie\nCzerwone Ale" [minlen=2];
+    "Kwaśne Ale" -> "Flamandzkie\nBrązowe Ale";
+    "Kwaśne Ale" -> "Lambik" [minlen=2];
+    "Kwaśne Ale" -> "Gueuze";
+    "Kwaśne Ale" -> "Owocowy Lambik" [minlen=2];
+
+    "Piwa" -> "Belgijskie Mocne Ale" [minlen=3];
+    "Belgijskie Mocne Ale" -> "Belgian Blond Ale";
+    "Belgijskie Mocne Ale" -> "Dubbel" [minlen=2];
+    "Belgijskie Mocne Ale" -> "Tripel";
+    "Belgijskie Mocne Ale" -> "Belgian Golden\nStrong Ale" [minlen=2];
+    "Belgijskie Mocne Ale" -> "Belgian Dark\nStrong Ale";
+
+    "Piwa" -> "Mocne Ale";
+    "Mocne Ale" -> "Old Ale";
+    "Mocne Ale" -> "English\nBarleywine" [minlen=2];
+    "Mocne Ale" -> "American\nBarleywine";
+
+    "Piwa" -> "Wędzone" [minlen=3];
+    "Wędzone" -> "Rauchbier";
+    "Wędzone" -> "Smoked" [minlen=2];
+    "Wędzone" -> "Wood-Aged";
+
+    "Piwa" -> "Pozostałe";
+    "Pozostałe" -> "Piwo owocowe";
+    "Pozostałe" -> "Piwo smakowe" [minlen=2];
+    "Pozostałe" -> "Piwo przyprawiane";
+    "Pozostałe" -> "Piwo świąteczne" [minlen=2];
+    "Pozostałe" -> "Piwo specjalne"
+
+}
+
