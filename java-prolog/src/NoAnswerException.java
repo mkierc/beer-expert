@@ -1,0 +1,13 @@
+/**
+ * Exception thrown when we have no generateAnswer to give.
+ */
+public class NoAnswerException extends Exception {
+    private static final long serialVersionUID = 2808738995798796114L;
+
+    /**
+     * @param message
+     */
+    public NoAnswerException(String message) {
+        super(message);
+    }
+}
